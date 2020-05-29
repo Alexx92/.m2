@@ -1,0 +1,15 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue May 26 16:54:50 CLT 2020
+http\://repository.jboss.org/nexus/content/repositories/fs-public/.error=
+http\://repository.jboss.org/nexus/content/groups/public-jboss/.error=
+http\://repository.jboss.org/nexus/content/groups/public-jboss/.lastUpdated=1590526472672
+http\://repository.jboss.org/nexus/content/repositories/fs-releases/.error=
+@default-Maven\ Central-http\://repo1.maven.org/maven2/.lastUpdated=1590526485988
+http\://repository.jboss.org/nexus/content/groups/ea/.lastUpdated=1590526478453
+http\://repository.jboss.org/nexus/content/repositories/fs-releases/.lastUpdated=1590526482674
+http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1590526458328
+http\://repository.jboss.org/nexus/content/groups/ea/.error=
+https\://repo.maven.apache.org/maven2/.lastUpdated=1590526490600
+http\://maven.repository.redhat.com/techpreview/all/.error=
+http\://repository.jboss.org/nexus/content/repositories/fs-public/.lastUpdated=1590526464502
+http\://repo1.maven.org/maven2/.error=Could not transfer artifact org.apache.directory.server\:apacheds-server-integ\:jar\:2.0.0-M6 from/to Maven Central (http\://repo1.maven.org/maven2/)\: Failed to transfer http\://repo1.maven.org/maven2/org/apache/directory/server/apacheds-server-integ/2.0.0-M6/apacheds-server-integ-2.0.0-M6.jar. Error code 501, HTTPS Required

@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Sep 02 23:33:34 GMT-04:00 2019
+antlr-2.7.7.jar>jboss-enterprise-maven-repository-ea=
+antlr-2.7.7.pom>jboss-enterprise-maven-repository-ea=
+antlr-2.7.7.pom>central=
+antlr-2.7.7.jar>redhat-ea-repository=

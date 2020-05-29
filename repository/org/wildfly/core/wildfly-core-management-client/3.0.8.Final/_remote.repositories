@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon May 04 16:45:43 CLT 2020
+wildfly-core-management-client-3.0.8.Final.jar>central=
+wildfly-core-management-client-3.0.8.Final.pom>central=
+wildfly-core-management-client-3.0.8.Final.jar>jboss-public-repository-group=

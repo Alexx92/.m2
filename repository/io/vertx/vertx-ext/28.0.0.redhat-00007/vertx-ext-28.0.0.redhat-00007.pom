@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2011-2014 The original author or authors
+  ~
+  ~  All rights reserved. This program and the accompanying materials
+  ~  are made available under the terms of the Eclipse Public License v1.0
+  ~  and Apache License v2.0 which accompanies this distribution.
+  ~
+  ~      The Eclipse Public License is available at
+  ~      http://www.eclipse.org/legal/epl-v10.html
+  ~
+  ~      The Apache License v2.0 is available at
+  ~      http://www.opensource.org/licenses/apache2.0.php
+  ~
+  ~  You may elect to redistribute this code under either of these licenses.
+  -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>io.vertx</groupId>
+    <artifactId>vertx-parent</artifactId>
+    <version>12.0.0.redhat-00007</version>
+  </parent>
+
+  <artifactId>vertx-ext</artifactId>
+  <version>28.0.0.redhat-00007</version>
+  <packaging>pom</packaging>
+
+  <name>Vert.x Ext</name>
+
+  <scm>
+    <connection>scm:git:git@github.com:vert-x3/vertx-ext-parent.git</connection>
+    <developerConnection>scm:git:git@github.com:vert-x3/vertx-ext-parent.git</developerConnection>
+    <url>git@github.com:vert-x3/vertx-ext-parent.git</url>
+  </scm>
+
+  <modules>
+    <module>resources</module>
+    <module>parent</module>
+  </modules>
+
+  <build>
+    <pluginManagement></pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.commonjava.maven.plugins</groupId>
+        <artifactId>project-sources-maven-plugin</artifactId>
+        <version>1.0</version>
+        <executions>
+          <execution>
+            <id>project-sources-archive</id>
+            <phase>initialize</phase>
+            <goals>
+              <goal>archive</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>com.redhat.rcm.maven.plugin</groupId>
+        <artifactId>buildmetadata-maven-plugin</artifactId>
+        <version>1.7.0</version>
+        <executions>
+          <execution>
+            <id>build-metadata</id>
+            <phase>initialize</phase>
+            <goals>
+              <goal>provide-buildmetadata</goal>
+            </goals>
+            <configuration>
+              <addToLocations>
+                <addToLocation>${session.executionRootDirectory}</addToLocation>
+              </addToLocations>
+              <activateOutputFileMapping>true</activateOutputFileMapping>
+              <addBuildDateInfo>false</addBuildDateInfo>
+              <addLocallyModifiedTagToFullVersion>false</addLocallyModifiedTagToFullVersion>
+              <addHostInfo>false</addHostInfo>
+              <addJavaRuntimeInfo>true</addJavaRuntimeInfo>
+              <addToFilters>false</addToFilters>
+              <validateCheckout>false</validateCheckout>
+              <addOsInfo>false</addOsInfo>
+              <hideJavaOptsInfo>false</hideJavaOptsInfo>
+              <forceNewProperties>true</forceNewProperties>
+              <hideCommandLineInfo>false</hideCommandLineInfo>
+              <addBuildDateToFullVersion>false</addBuildDateToFullVersion>
+              <createPropertiesReport>true</createPropertiesReport>
+              <addToGeneratedSources>false</addToGeneratedSources>
+              <createXmlReport>false</createXmlReport>
+              <propertiesOutputFile>build.metadata</propertiesOutputFile>
+              <addMavenExecutionInfo>false</addMavenExecutionInfo>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
+<!--
+Modified by POM Manipulation Extension for Maven 2.13.1 ( SHA: 7bd176c6 ) 
+-->
+

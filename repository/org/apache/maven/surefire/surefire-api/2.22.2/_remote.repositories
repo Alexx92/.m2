@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue May 26 15:30:09 CLT 2020
+surefire-api-2.22.2.jar>jboss-ga-repository=
+surefire-api-2.22.2.pom>jboss-ga-repository=

@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 03 12:44:43 GMT-04:00 2019
+https\://repo.maven.apache.org/maven2/.lastUpdated=1567529083348
+@default-jboss-ga-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1567529070174
+http\://maven.repository.redhat.com/techpreview/all/.error=Could not transfer artifact org.apache.maven.plugin-tools\:maven-plugin-annotations\:jar\:3.5.2 from/to jboss-ga-repository (http\://maven.repository.redhat.com/techpreview/all)\: Failed to transfer file http\://maven.repository.redhat.com/techpreview/all/org/apache/maven/plugin-tools/maven-plugin-annotations/3.5.2/maven-plugin-annotations-3.5.2.jar with status code 500

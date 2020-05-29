@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>cl.cnsv</groupId>
+  <artifactId>Denuncio</artifactId>
+  <versioning>
+    <release>1.2.49</release>
+    <versions>
+      <version>1.2.41HC01</version>
+      <version>1.2.41HC02</version>
+      <version>1.2.41HC03</version>
+      <version>1.2.41HC04</version>
+      <version>1.2.44HC01</version>
+      <version>1.2.44HC02</version>
+      <version>1.2.44HC03</version>
+      <version>1.2.44HC04</version>
+      <version>1.2.44HC05</version>
+      <version>1.2.44HC06</version>
+      <version>1.2.44HC07</version>
+      <version>1.2.44HC08</version>
+      <version>1.2.44HC09</version>
+      <version>1.2.44HC10</version>
+      <version>1.2.44HC11</version>
+      <version>1.2.44HC12</version>
+      <version>1.2.44HC13</version>
+      <version>1.2.44HC14</version>
+      <version>1.2.46HC01</version>
+      <version>1.2.46</version>
+      <version>1.2.47</version>
+      <version>1.2.48</version>
+      <version>1.2.49</version>
+    </versions>
+    <lastUpdated>20190509004347</lastUpdated>
+  </versioning>
+</metadata>

@@ -1,0 +1,9 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Wed Oct 02 16:10:45 CLST 2019
+dom4j-1.6.1.pom>redhat-early-access-repository=
+dom4j-1.6.1.pom>jboss-enterprise-maven-repository-ea=
+dom4j-1.6.1.jar>jboss-enterprise-maven-repository-ea=
+dom4j-1.6.1.jar>central=
+dom4j-1.6.1.pom>central=
+dom4j-1.6.1.pom>redhat-ea-repository=
+dom4j-1.6.1.jar>redhat-ea-repository=

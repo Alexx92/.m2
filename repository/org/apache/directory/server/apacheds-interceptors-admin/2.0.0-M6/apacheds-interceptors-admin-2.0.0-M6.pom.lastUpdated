@@ -1,0 +1,15 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue May 26 16:52:08 CLT 2020
+http\://repository.jboss.org/nexus/content/repositories/fs-public/.error=
+http\://repository.jboss.org/nexus/content/groups/public-jboss/.error=
+http\://repository.jboss.org/nexus/content/groups/public-jboss/.lastUpdated=1590526324698
+http\://repository.jboss.org/nexus/content/repositories/fs-releases/.error=
+@default-Maven\ Central-http\://repo1.maven.org/maven2/.lastUpdated=1590526328136
+http\://repository.jboss.org/nexus/content/groups/ea/.lastUpdated=1590526327543
+http\://repository.jboss.org/nexus/content/repositories/fs-releases/.lastUpdated=1590526327879
+http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1590526323938
+http\://repository.jboss.org/nexus/content/groups/ea/.error=
+https\://repo.maven.apache.org/maven2/.lastUpdated=1590526328423
+http\://maven.repository.redhat.com/techpreview/all/.error=
+http\://repository.jboss.org/nexus/content/repositories/fs-public/.lastUpdated=1590526324352
+http\://repo1.maven.org/maven2/.error=Could not transfer artifact org.apache.directory.server\:apacheds-interceptors-admin\:pom\:2.0.0-M6 from/to Maven Central (http\://repo1.maven.org/maven2/)\: Failed to transfer http\://repo1.maven.org/maven2/org/apache/directory/server/apacheds-interceptors-admin/2.0.0-M6/apacheds-interceptors-admin-2.0.0-M6.pom. Error code 501, HTTPS Required

@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon May 04 16:45:43 CLT 2020
+wildfly-network-3.0.8.Final.pom>jboss-public-repository-group=
+wildfly-network-3.0.8.Final.jar>central=
+wildfly-network-3.0.8.Final.pom>central=
+wildfly-network-3.0.8.Final.jar>jboss-public-repository-group=

@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Wed Sep 04 10:08:02 GMT-04:00 2019
+asm-3.3.1.pom>redhat-ea-repository=
+asm-3.3.1.jar>redhat-ea-repository=
+asm-3.3.1.jar>jboss-enterprise-maven-repository-ea=
+asm-3.3.1.pom>jboss-enterprise-maven-repository-ea=
+asm-3.3.1.jar>central=
+asm-3.3.1.pom>central=

@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue May 26 16:35:35 CLT 2020
+commons-collections-3.2.1.redhat-7.jar>jbosspublic=
+commons-collections-3.2.1.redhat-7.jar>jboss-ga-repository=
+commons-collections-3.2.1.redhat-7.pom>jboss-ga-repository=

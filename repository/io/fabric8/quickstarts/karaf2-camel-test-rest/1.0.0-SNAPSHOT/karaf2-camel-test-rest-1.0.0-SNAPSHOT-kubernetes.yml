@@ -1,0 +1,99 @@
+---
+apiVersion: v1
+kind: List
+items:
+- apiVersion: v1
+  kind: Service
+  metadata:
+    annotations:
+      fabric8.io/git-commit: 326cf7c1db22ab881b2a17d8866eb9f39427204a
+      fabric8.io/git-branch: master
+    labels:
+      provider: fabric8
+      project: karaf2-camel-test-rest
+      version: 1.0.0-SNAPSHOT
+      group: io.fabric8.quickstarts
+    name: karaf2-camel-test-rest
+  spec:
+    ports:
+    - name: intermapper
+      port: 8181
+      protocol: TCP
+      targetPort: 8181
+    selector:
+      project: karaf2-camel-test-rest
+      provider: fabric8
+      group: io.fabric8.quickstarts
+- apiVersion: extensions/v1beta1
+  kind: Deployment
+  metadata:
+    annotations:
+      fabric8.io/git-commit: 326cf7c1db22ab881b2a17d8866eb9f39427204a
+      fabric8.io/git-branch: master
+      fabric8.io/metrics-path: dashboard/file/kubernetes-pods.json/?var-project=karaf2-camel-test-rest&var-version=1.0.0-SNAPSHOT
+    labels:
+      provider: fabric8
+      project: karaf2-camel-test-rest
+      version: 1.0.0-SNAPSHOT
+      group: io.fabric8.quickstarts
+    name: karaf2-camel-test-rest
+  spec:
+    replicas: 1
+    selector:
+      matchLabels:
+        project: karaf2-camel-test-rest
+        provider: fabric8
+        group: io.fabric8.quickstarts
+    template:
+      metadata:
+        annotations:
+          fabric8.io/git-commit: 326cf7c1db22ab881b2a17d8866eb9f39427204a
+          fabric8.io/git-branch: master
+          fabric8.io/metrics-path: dashboard/file/kubernetes-pods.json/?var-project=karaf2-camel-test-rest&var-version=1.0.0-SNAPSHOT
+        labels:
+          provider: fabric8
+          project: karaf2-camel-test-rest
+          version: 1.0.0-SNAPSHOT
+          group: io.fabric8.quickstarts
+      spec:
+        containers:
+        - env:
+          - name: MYSQL_SERVICE_NAME
+            value: mysql
+          - name: MYSQL_SERVICE_DATABASE
+            value: sampledb
+          - name: MYSQL_SERVICE_USERNAME
+          - name: MYSQL_SERVICE_PASSWORD
+          - name: KUBERNETES_NAMESPACE
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.namespace
+          image: karaf2-camel-test-rest:latest
+          imagePullPolicy: IfNotPresent
+          livenessProbe:
+            httpGet:
+              path: /health-check
+              port: 8181
+            initialDelaySeconds: 180
+          name: karaf
+          ports:
+          - containerPort: 8181
+            name: intermapper
+            protocol: TCP
+          - containerPort: 8778
+            name: jolokia
+            protocol: TCP
+          readinessProbe:
+            httpGet:
+              path: /readiness-check
+              port: 8181
+            initialDelaySeconds: 10
+          resources:
+            limits:
+              cpu: "1.0"
+              memory: 512Mi
+            requests:
+              cpu: "0.2"
+              memory: 128Mi
+          securityContext:
+            privileged: false

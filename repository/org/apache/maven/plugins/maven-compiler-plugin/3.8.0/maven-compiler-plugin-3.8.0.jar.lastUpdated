@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 03 12:30:43 GMT-04:00 2019
+https\://repo.maven.apache.org/maven2/.lastUpdated=1567528243656
+@default-jboss-ga-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1567528240573
+http\://maven.repository.redhat.com/techpreview/all/.error=Could not transfer artifact org.apache.maven.plugins\:maven-compiler-plugin\:jar\:3.8.0 from/to jboss-ga-repository (http\://maven.repository.redhat.com/techpreview/all)\: Failed to transfer file http\://maven.repository.redhat.com/techpreview/all/org/apache/maven/plugins/maven-compiler-plugin/3.8.0/maven-compiler-plugin-3.8.0.jar with status code 500

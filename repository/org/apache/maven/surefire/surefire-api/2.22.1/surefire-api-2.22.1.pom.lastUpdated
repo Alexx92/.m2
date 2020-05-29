@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 03 12:44:15 GMT-04:00 2019
+https\://repo.maven.apache.org/maven2/.lastUpdated=1567529055074
+@default-jboss-ga-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1567529054620
+http\://maven.repository.redhat.com/techpreview/all/.error=Could not transfer artifact org.apache.maven.surefire\:surefire-api\:pom\:2.22.1 from/to jboss-ga-repository (http\://maven.repository.redhat.com/techpreview/all)\: Failed to transfer file http\://maven.repository.redhat.com/techpreview/all/org/apache/maven/surefire/surefire-api/2.22.1/surefire-api-2.22.1.pom with status code 500

@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon May 04 16:42:44 CLT 2020
+https\://repo.maven.apache.org/maven2/.lastUpdated=1588624964012
+http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1588624963359
+https\://maven.repository.redhat.com/ga/.lastUpdated=1588624963685
+http\://maven.repository.redhat.com/techpreview/all/.error=
+https\://maven.repository.redhat.com/ga/.error=

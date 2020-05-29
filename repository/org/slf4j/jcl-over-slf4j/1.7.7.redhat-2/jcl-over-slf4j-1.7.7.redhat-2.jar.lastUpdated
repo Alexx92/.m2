@@ -1,0 +1,11 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Sep 09 17:57:23 CLST 2019
+https\://repo.fusesource.com/nexus/content/groups/public/.error=
+@default-jboss-ga-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1567724059946
+http\://download.java.net/maven/2/.lastUpdated=1567724063926
+http\://download.java.net/maven/2/.error=
+https\://maven.repository.redhat.com/ga/.lastUpdated=1568062643601
+https\://repo.fusesource.com/nexus/content/groups/public/.lastUpdated=1568062642703
+http\://maven.repository.redhat.com/techpreview/all/.error=Could not transfer artifact org.slf4j\:jcl-over-slf4j\:jar\:1.7.7.redhat-2 from/to jboss-ga-repository (http\://maven.repository.redhat.com/techpreview/all)\: Failed to transfer http\://maven.repository.redhat.com/techpreview/all/org/slf4j/jcl-over-slf4j/1.7.7.redhat-2/jcl-over-slf4j-1.7.7.redhat-2.jar. Error code 500, Internal Server Error
+https\://repo.maven.apache.org/maven2/.lastUpdated=1567724061254
+https\://repo.maven.apache.org/maven2/.error=

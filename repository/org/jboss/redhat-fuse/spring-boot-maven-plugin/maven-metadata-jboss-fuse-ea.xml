@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.jboss.redhat-fuse</groupId>
+  <artifactId>spring-boot-maven-plugin</artifactId>
+  <versioning>
+    <latest>7.7.0.fuse-sb2-770006</latest>
+    <release>7.7.0.fuse-sb2-770006</release>
+    <versions>
+      <version>7.1.0.fuse-710024</version>
+      <version>7.7.0.fuse-770005</version>
+      <version>7.7.0.fuse-770006</version>
+      <version>7.7.0.fuse-770007</version>
+      <version>7.7.0.fuse-770008</version>
+      <version>7.7.0.fuse-770009</version>
+      <version>7.7.0.fuse-sb2-770006</version>
+    </versions>
+    <lastUpdated>20200528001225</lastUpdated>
+  </versioning>
+</metadata>

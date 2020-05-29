@@ -1,0 +1,15 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue May 26 16:53:35 CLT 2020
+http\://repository.jboss.org/nexus/content/repositories/fs-public/.error=
+http\://repository.jboss.org/nexus/content/groups/public-jboss/.error=
+http\://repository.jboss.org/nexus/content/groups/public-jboss/.lastUpdated=1590526414204
+http\://repository.jboss.org/nexus/content/repositories/fs-releases/.error=
+@default-Maven\ Central-http\://repo1.maven.org/maven2/.lastUpdated=1590526415209
+http\://repository.jboss.org/nexus/content/groups/ea/.lastUpdated=1590526414623
+http\://repository.jboss.org/nexus/content/repositories/fs-releases/.lastUpdated=1590526414942
+http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1590526413517
+http\://repository.jboss.org/nexus/content/groups/ea/.error=
+https\://repo.maven.apache.org/maven2/.lastUpdated=1590526415500
+http\://maven.repository.redhat.com/techpreview/all/.error=
+http\://repository.jboss.org/nexus/content/repositories/fs-public/.lastUpdated=1590526413873
+http\://repo1.maven.org/maven2/.error=Could not transfer artifact org.apache.directory.shared\:shared-ldap-extras-sp\:pom\:1.0.0-M11 from/to Maven Central (http\://repo1.maven.org/maven2/)\: Failed to transfer http\://repo1.maven.org/maven2/org/apache/directory/shared/shared-ldap-extras-sp/1.0.0-M11/shared-ldap-extras-sp-1.0.0-M11.pom. Error code 501, HTTPS Required

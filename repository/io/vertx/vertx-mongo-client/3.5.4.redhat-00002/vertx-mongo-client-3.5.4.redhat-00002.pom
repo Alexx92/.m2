@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2014 Red Hat, Inc.
+  ~
+  ~  All rights reserved. This program and the accompanying materials
+  ~  are made available under the terms of the Eclipse Public License v1.0
+  ~  and Apache License v2.0 which accompanies this distribution.
+  ~
+  ~  The Eclipse Public License is available at
+  ~  http://www.eclipse.org/legal/epl-v10.html
+  ~
+  ~  The Apache License v2.0 is available at
+  ~  http://www.opensource.org/licenses/apache2.0.php
+  ~
+  ~  You may elect to redistribute this code under either of these licenses.
+  -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <groupId>io.vertx</groupId>
+    <artifactId>vertx-ext-parent</artifactId>
+    <version>28.0.0.redhat-00007</version>
+  </parent>
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>vertx-mongo-client</artifactId>
+  <version>3.5.4.redhat-00002</version>
+
+  <properties>
+    <stack.version>3.5.4.redhat-00002</stack.version>
+    <mongo.async.version>3.6.1.redhat-001</mongo.async.version>
+    <codegen.rxjava.deprecated>true</codegen.rxjava.deprecated>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>io.vertx</groupId>
+        <artifactId>vertx-dependencies</artifactId>
+        <version>${stack.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>io.vertx</groupId>
+      <artifactId>vertx-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.mongodb</groupId>
+      <artifactId>mongodb-driver-async</artifactId>
+      <version>${mongo.async.version}</version>
+      <exclusions>
+        <exclusion>
+          <groupId>io.netty</groupId>
+          <artifactId>netty-transport</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>io.netty</groupId>
+          <artifactId>netty-buffer</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>io.netty</groupId>
+          <artifactId>netty-handler</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <!-- declare this dependency to force flapdoodle to use this one. It is the version used by vert.x -->
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.21.redhat-2</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>de.flapdoodle.embed</groupId>
+      <artifactId>de.flapdoodle.embed.mongo</artifactId>
+      <version>2.0.3</version>
+      <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-api</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>io.vertx</groupId>
+      <artifactId>vertx-codegen</artifactId>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>io.vertx</groupId>
+      <artifactId>vertx-docgen</artifactId>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>io.vertx</groupId>
+      <artifactId>vertx-rx-java</artifactId>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>io.vertx</groupId>
+      <artifactId>vertx-rx-java2</artifactId>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>io.vertx</groupId>
+      <artifactId>vertx-codetrans</artifactId>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>io.vertx</groupId>
+      <artifactId>vertx-core</artifactId>
+      <type>test-jar</type>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12.0.redhat-003</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>pl.pragmatists</groupId>
+      <artifactId>JUnitParams</artifactId>
+      <version>1.1.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+    
+    
+    
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
+          </archive>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>biz.aQute.bnd</groupId>
+        <artifactId>bnd-maven-plugin</artifactId>
+        <version>3.2.0</version>
+        <executions>
+          <execution>
+            <id>default-bnd-process</id>
+            <goals>
+              <goal>bnd-process</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <bnd><![CDATA[
+          Import-Package: \
+            groovy.lang.*;resolution:=optional,\
+            org.codehaus.groovy.*;resolution:=optional,\
+            kotlin.*;resolution:=optional,\
+            io.vertx.groovy.*;resolution:=optional,\
+            io.vertx.ext.auth.*;resolution:=optional,\
+            io.vertx.lang.rxjava.*;resolution:=optional,\
+            io.vertx.lang.groovy.*;resolution:=optional,\
+            io.vertx.codegen.annotations;resolution:=optional,\
+            io.vertx.rx.java;resolution:=optional,\
+            io.vertx.rxjava.core.*;resolution:=optional,\
+            io.vertx.rxjava.ext.auth.*;resolution:=optional,\
+            rx.*;resolution:=optional,\
+            *
+          -exportcontents: !*impl, !examples, *
+          ]]></bnd>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.commonjava.maven.plugins</groupId>
+        <artifactId>project-sources-maven-plugin</artifactId>
+        <version>1.0</version>
+        <executions>
+          <execution>
+            <id>project-sources-archive</id>
+            <phase>initialize</phase>
+            <goals>
+              <goal>archive</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>com.redhat.rcm.maven.plugin</groupId>
+        <artifactId>buildmetadata-maven-plugin</artifactId>
+        <version>1.7.0</version>
+        <executions>
+          <execution>
+            <id>build-metadata</id>
+            <phase>initialize</phase>
+            <goals>
+              <goal>provide-buildmetadata</goal>
+            </goals>
+            <configuration>
+              <addToLocations>
+                <addToLocation>${session.executionRootDirectory}</addToLocation>
+              </addToLocations>
+              <activateOutputFileMapping>true</activateOutputFileMapping>
+              <addBuildDateInfo>false</addBuildDateInfo>
+              <addLocallyModifiedTagToFullVersion>false</addLocallyModifiedTagToFullVersion>
+              <addHostInfo>false</addHostInfo>
+              <addJavaRuntimeInfo>true</addJavaRuntimeInfo>
+              <addToFilters>false</addToFilters>
+              <validateCheckout>false</validateCheckout>
+              <addOsInfo>false</addOsInfo>
+              <hideJavaOptsInfo>false</hideJavaOptsInfo>
+              <forceNewProperties>true</forceNewProperties>
+              <hideCommandLineInfo>false</hideCommandLineInfo>
+              <addBuildDateToFullVersion>false</addBuildDateToFullVersion>
+              <createPropertiesReport>true</createPropertiesReport>
+              <addToGeneratedSources>false</addToGeneratedSources>
+              <createXmlReport>false</createXmlReport>
+              <propertiesOutputFile>build.metadata</propertiesOutputFile>
+              <addMavenExecutionInfo>false</addMavenExecutionInfo>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+    <pluginManagement></pluginManagement>
+  </build>
+
+  <profiles>
+    <profile>
+      <id>vertx-redhat-javadoc</id>
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <version>2.10.4</version>
+            <executions>
+              <execution>
+                <id>attach-javadocs</id>
+                <goals>
+                  <goal>jar</goal>
+                </goals>
+                <configuration>
+                  <additionalparam>-Xdoclint:none</additionalparam>
+                  <notimestamp>true</notimestamp>
+                  <sourceFileExcludes>
+                    <exclude>**\/impl\/**</exclude>
+                    <exclude>**\/package-info.java</exclude>
+                    <exclude>io\/vertx\/groovy\/*</exclude>
+                    <exclude>examples\/**</exclude>
+                  </sourceFileExcludes>
+                  <sourceFileIncludes>
+                    <sourceFileInclude>io/vertx/**/*.java</sourceFileInclude>
+                    <sourceFileInclude>${project.basedir}/src/main/generated</sourceFileInclude>
+                  </sourceFileIncludes>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+    <profile>
+      <id>std-redhat-javadoc</id>
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <version>2.10.4</version>
+            <executions>
+              <execution>
+                <id>attach-javadocs</id>
+                <goals>
+                  <goal>jar</goal>
+                </goals>
+                <configuration>
+                  <additionalparam>-Xdoclint:none</additionalparam>
+                  <notimestamp>true</notimestamp>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+    <profile>
+      <id>std-redhat-source</id>
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-source-plugin</artifactId>
+            <version>3.0.1</version>
+            <executions>
+              <execution>
+                <id>attach-sources</id>
+                <goals>
+                  <goal>jar</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+
+</project>
+<!--
+Modified by POM Manipulation Extension for Maven 2.13.1 ( SHA: 7bd176c6 ) 
+-->
+

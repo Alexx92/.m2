@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon May 04 16:42:11 CLT 2020
+http\://repository.jboss.org/nexus/content/groups/public-jboss/.lastUpdated=1588624931294
+http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1588624930242
+https\://repo.maven.apache.org/maven2/.lastUpdated=1588624930662
+https\://maven.repository.redhat.com/ga/.lastUpdated=1588624930631
+http\://maven.repository.redhat.com/techpreview/all/.error=
+https\://maven.repository.redhat.com/ga/.error=

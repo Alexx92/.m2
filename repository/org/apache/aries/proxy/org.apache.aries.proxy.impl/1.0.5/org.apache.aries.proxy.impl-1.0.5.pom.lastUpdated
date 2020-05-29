@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Sep 05 18:54:03 CLT 2019
+https\://repo.maven.apache.org/maven2/.lastUpdated=1567724043777
+@default-jboss-ga-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1567724043332
+http\://maven.repository.redhat.com/techpreview/all/.error=Could not transfer artifact org.apache.aries.proxy\:org.apache.aries.proxy.impl\:pom\:1.0.5 from/to jboss-ga-repository (http\://maven.repository.redhat.com/techpreview/all)\: Failed to transfer http\://maven.repository.redhat.com/techpreview/all/org/apache/aries/proxy/org.apache.aries.proxy.impl/1.0.5/org.apache.aries.proxy.impl-1.0.5.pom. Error code 500, Internal Server Error

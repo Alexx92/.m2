@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jun 24 11:10:28 GMT-04:00 2019
+https\://repo.maven.apache.org/maven2/.lastUpdated=1561389028804
+@default-jboss-ga-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1561389028451
+http\://maven.repository.redhat.com/techpreview/all/.error=Could not transfer artifact org.apache.maven.archetype\:archetype-common\:pom\:3.1.1 from/to jboss-ga-repository (http\://maven.repository.redhat.com/techpreview/all)\: Connect to maven.repository.redhat.com\:443 [maven.repository.redhat.com/104.118.45.176] failed\: Connection timed out\: connect

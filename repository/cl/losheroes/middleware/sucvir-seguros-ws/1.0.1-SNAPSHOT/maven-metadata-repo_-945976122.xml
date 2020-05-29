@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>cl.losheroes.middleware</groupId>
+  <artifactId>sucvir-seguros-ws</artifactId>
+  <versioning>
+    <lastUpdated>20190814152200</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>1.0.1-20190814.152200-1</value>
+        <updated>20190814152200</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.0.1-20190814.152200-1</value>
+        <updated>20190814152200</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>

@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jun 24 11:17:01 GMT-04:00 2019
+com.mycompany.bundle-1.0-SNAPSHOT.jar>=
+com.mycompany.bundle-1.0-SNAPSHOT.pom>=

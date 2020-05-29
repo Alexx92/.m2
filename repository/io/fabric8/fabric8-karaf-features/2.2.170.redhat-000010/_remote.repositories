@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue May 26 16:45:56 CLT 2020
+fabric8-karaf-features-2.2.170.redhat-000010-features.xml>jboss-ga-repository=
+fabric8-karaf-features-2.2.170.redhat-000010.pom>jboss-ga-repository=

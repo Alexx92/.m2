@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Sep 05 18:54:10 CLT 2019
+https\://repo.maven.apache.org/maven2/.lastUpdated=1567724050500
+@default-jboss-ga-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1567724050025
+http\://maven.repository.redhat.com/techpreview/all/.error=Could not transfer artifact javax.servlet\:servlet-api\:pom\:2.5 from/to jboss-ga-repository (http\://maven.repository.redhat.com/techpreview/all)\: Failed to transfer http\://maven.repository.redhat.com/techpreview/all/javax/servlet/servlet-api/2.5/servlet-api-2.5.pom. Error code 500, Internal Server Error

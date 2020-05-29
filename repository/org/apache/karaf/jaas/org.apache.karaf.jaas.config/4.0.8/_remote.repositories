@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Sep 05 10:57:27 GMT-04:00 2019
+org.apache.karaf.jaas.config-4.0.8.jar>central=
+org.apache.karaf.jaas.config-4.0.8.pom>central=

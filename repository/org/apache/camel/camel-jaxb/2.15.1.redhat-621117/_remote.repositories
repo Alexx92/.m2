@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Sep 12 10:53:30 CLST 2019
+camel-jaxb-2.15.1.redhat-621117.jar>redhat-ga-repository=
+camel-jaxb-2.15.1.redhat-621117.pom>fuse-public-repository=
+camel-jaxb-2.15.1.redhat-621117.jar>fuse-public-repository=
+camel-jaxb-2.15.1.redhat-621117.pom>redhat-ga-repository=

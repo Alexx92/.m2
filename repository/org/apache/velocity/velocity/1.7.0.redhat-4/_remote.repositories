@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue May 26 16:33:13 CLT 2020
+velocity-1.7.0.redhat-4.jar>jboss-ga-repository=
+velocity-1.7.0.redhat-4.pom>jboss-ga-repository=

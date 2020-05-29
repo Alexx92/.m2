@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Sep 02 23:37:09 GMT-04:00 2019
+snakeyaml-1.18.0.redhat-2.jar>jboss-ga-repository=
+snakeyaml-1.18.0.redhat-2.pom>jboss-ga-repository=

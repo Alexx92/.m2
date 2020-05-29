@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue May 26 16:39:25 CLT 2020
+org.apache.karaf.deployer.features-4.0.8.redhat-000026.pom>jboss-ga-repository=
+org.apache.karaf.deployer.features-4.0.8.redhat-000026.jar>jboss-ga-repository=

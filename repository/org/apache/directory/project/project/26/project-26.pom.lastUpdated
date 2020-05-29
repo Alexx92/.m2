@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue May 26 16:50:53 CLT 2020
+http\://repository.jboss.org/nexus/content/groups/public-jboss/.lastUpdated=1590526253403
+http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1590526252242
+http\://repository.jboss.org/nexus/content/repositories/fs-public/.error=
+http\://maven.repository.redhat.com/techpreview/all/.error=
+http\://repository.jboss.org/nexus/content/repositories/fs-public/.lastUpdated=1590526252748

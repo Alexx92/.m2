@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: List
+items:
+- apiVersion: image.openshift.io/v1
+  kind: ImageStream
+  metadata:
+    name: spring-boot-test-camel
+  spec:
+    tags:
+    - from:
+        kind: ImageStreamImage
+        name: spring-boot-test-camel@sha256:fdb1416d2ffe3984982c07a075901bf69e02e2daf1d99b58cd469f1fb006f25b
+        namespace: test1-hc
+      name: latest

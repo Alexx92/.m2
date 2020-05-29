@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Sep 12 10:53:27 CLST 2019
+https\://repo.maven.apache.org/maven2/.lastUpdated=1567724047100
+https\://repo.fusesource.com/nexus/content/groups/public/.lastUpdated=1568061229307
+https\://maven.repository.redhat.com/ga/.lastUpdated=1568296407600
+@default-jboss-ga-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1567724046791
+http\://maven.repository.redhat.com/techpreview/all/.error=Could not transfer artifact org.apache.camel\:camel-jaxb\:pom\:2.15.1.redhat-621117 from/to jboss-ga-repository (http\://maven.repository.redhat.com/techpreview/all)\: Failed to transfer http\://maven.repository.redhat.com/techpreview/all/org/apache/camel/camel-jaxb/2.15.1.redhat-621117/camel-jaxb-2.15.1.redhat-621117.pom. Error code 500, Internal Server Error
+https\://repo.maven.apache.org/maven2/.error=

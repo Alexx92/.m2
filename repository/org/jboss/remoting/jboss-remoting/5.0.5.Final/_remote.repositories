@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon May 04 16:45:44 CLT 2020
+jboss-remoting-5.0.5.Final.jar>central=
+jboss-remoting-5.0.5.Final.pom>central=
+jboss-remoting-5.0.5.Final.jar>jboss-public-repository-group=

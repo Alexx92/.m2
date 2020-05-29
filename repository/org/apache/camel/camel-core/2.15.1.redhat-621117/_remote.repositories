@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Sep 09 17:34:40 CLST 2019
+camel-core-2.15.1.redhat-621117.jar>jboss-ga-repository=
+camel-core-2.15.1.redhat-621117.pom>jboss-ga-repository=
+camel-core-2.15.1.redhat-621117-tests.jar>fuse-public-repository=

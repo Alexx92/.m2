@@ -1,0 +1,13 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue May 26 16:45:57 CLT 2020
+http\://repository.jboss.org/nexus/content/repositories/fs-public/.error=
+http\://repository.jboss.org/nexus/content/groups/public-jboss/.error=
+http\://repository.jboss.org/nexus/content/groups/public-jboss/.lastUpdated=1590525955408
+http\://repository.jboss.org/nexus/content/repositories/fs-releases/.error=
+http\://repository.jboss.org/nexus/content/groups/ea/.lastUpdated=1590525956705
+http\://repository.jboss.org/nexus/content/repositories/fs-releases/.lastUpdated=1590525956047
+http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1590525954066
+http\://repository.jboss.org/nexus/content/groups/ea/.error=
+https\://repo.maven.apache.org/maven2/.lastUpdated=1590525957008
+http\://maven.repository.redhat.com/techpreview/all/.error=
+http\://repository.jboss.org/nexus/content/repositories/fs-public/.lastUpdated=1590525954734

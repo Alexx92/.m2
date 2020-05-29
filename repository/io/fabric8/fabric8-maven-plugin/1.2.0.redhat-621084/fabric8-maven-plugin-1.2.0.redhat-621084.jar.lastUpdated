@@ -1,0 +1,10 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu May 28 22:07:36 CLT 2020
+@default-central-http\://repo.maven.apache.org/maven2/.lastUpdated=1590525620778
+http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1590718056175
+https\://repo.maven.apache.org/maven2/.lastUpdated=1590525677359
+https\://repo.fusesource.com/nexus/content/groups/public/.lastUpdated=1590525621945
+http\://repo.maven.apache.org/maven2/.error=Could not transfer artifact io.fabric8\:fabric8-maven-plugin\:jar\:1.2.0.redhat-621084 from/to central (http\://repo.maven.apache.org/maven2)\: Failed to transfer file http\://repo.maven.apache.org/maven2/io/fabric8/fabric8-maven-plugin/1.2.0.redhat-621084/fabric8-maven-plugin-1.2.0.redhat-621084.jar with status code 501
+http\://maven.repository.redhat.com/techpreview/all/.error=
+http\://repository.jboss.org/nexus/content/repositories/fs-public/.lastUpdated=1590525959604
+https\://repo.maven.apache.org/maven2/.error=

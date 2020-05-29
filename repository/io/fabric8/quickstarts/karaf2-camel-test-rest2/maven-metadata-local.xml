@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>io.fabric8.quickstarts</groupId>
+  <artifactId>karaf2-camel-test-rest2</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20190905210921</lastUpdated>
+  </versioning>
+</metadata>

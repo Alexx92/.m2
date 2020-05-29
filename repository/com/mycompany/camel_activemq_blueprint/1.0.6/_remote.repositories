@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Jul 02 14:51:34 GMT-04:00 2019
+camel_activemq_blueprint-1.0.6.pom>=
+camel_activemq_blueprint-1.0.6.jar>=

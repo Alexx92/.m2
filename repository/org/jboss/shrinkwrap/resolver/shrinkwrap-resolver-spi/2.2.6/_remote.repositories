@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon May 04 16:45:46 CLT 2020
+shrinkwrap-resolver-spi-2.2.6.jar>jboss-public-repository-group=
+shrinkwrap-resolver-spi-2.2.6.pom>central=

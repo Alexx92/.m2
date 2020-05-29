@@ -1,0 +1,13 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Apr 09 15:40:42 GMT-04:00 2019
+https\://maven.repository.redhat.com/earlyaccess/all/.error=
+https\://repo.fusesource.com/nexus/content/groups/public/.error=
+https\://repo.fusesource.com/nexus/content/groups/ea/.error=
+https\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1554838840634
+http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1554838840059
+https\://maven.repository.redhat.com/ga/.lastUpdated=1554838840350
+https\://repo.fusesource.com/nexus/content/groups/public/.lastUpdated=1554838841073
+https\://repo.maven.apache.org/maven2/.lastUpdated=1554838842434
+http\://maven.repository.redhat.com/techpreview/all/.error=
+https\://maven.repository.redhat.com/ga/.error=
+https\://repo.fusesource.com/nexus/content/groups/ea/.lastUpdated=1554838842143

@@ -1,0 +1,18 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Apr 05 09:34:19 CLST 2019
+https\://repository.jboss.org/nexus/content/groups/public/.lastUpdated=1554467637944
+https\://repository.jboss.org/nexus/content/groups/ea/.lastUpdated=1554467633216
+http\://repository.springsource.com/maven/bundles/release/.error=
+http\://repository.springsource.com/maven/bundles/external/.error=
+https\://repository.jboss.org/nexus/content/groups/ea/.error=
+https\://repository.jboss.org/nexus/content/repositories/thirdparty-uploads/.lastUpdated=1554467635011
+https\://oss.sonatype.org/content/groups/ops4j/.error=
+http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1554467632310
+https\://repository.jboss.org/nexus/content/groups/fs-public/.lastUpdated=1554467634128
+https\://oss.sonatype.org/content/groups/ops4j/.lastUpdated=1554467636544
+https\://repo.maven.apache.org/maven2/.lastUpdated=1554467659137
+http\://maven.repository.redhat.com/techpreview/all/.error=
+https\://repository.jboss.org/nexus/content/repositories/thirdparty-uploads/.error=
+https\://repository.jboss.org/nexus/content/groups/fs-public/.error=
+http\://repository.springsource.com/maven/bundles/external/.lastUpdated=1554467635607
+http\://repository.springsource.com/maven/bundles/release/.lastUpdated=1554467635310

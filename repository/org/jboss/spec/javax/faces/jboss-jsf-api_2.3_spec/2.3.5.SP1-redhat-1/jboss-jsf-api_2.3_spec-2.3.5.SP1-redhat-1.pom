@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.jboss</groupId>
+    <artifactId>jboss-parent</artifactId>
+    <version>25.0.0.redhat-1</version>
+  </parent>
+
+  <groupId>org.jboss.spec.javax.faces</groupId>
+  <artifactId>jboss-jsf-api_2.3_spec</artifactId>
+  <version>2.3.5.SP1-redhat-1</version>
+  <packaging>jar</packaging>
+
+  <name>JavaServer(TM) Faces 2.3 API</name>
+  <description>JSR-000372: JavaServer(TM) Faces 2.3 API</description>
+
+  <licenses>
+    <license>
+      <name>CDDL or GPLv2 with exceptions</name>
+      <url>https://glassfish.java.net/public/CDDL+GPL_1_1.html</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>scm:git:git@github.com:jboss/jboss-jsf-api_spec.git</connection>
+    <developerConnection>scm:git:git@github.com:jboss/jboss-jsf-api_spec.git</developerConnection>
+    <url>https://github.com/jboss/jboss-jsf-api_spec</url>
+    <tag>jboss-jsf-api_2.3_spec-2.3.5.SP1</tag>
+  </scm>
+  <distributionManagement>
+    <repository>
+      <id>jboss-releases-repository</id>
+      <name>JBoss Releases Repository</name>
+      <url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</url>
+    </repository>
+    <snapshotRepository>
+      <id>jboss-snapshots-repository</id>
+      <name>JBoss Snapshots Repository</name>
+      <url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>enforce-java-version</id>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+            <configuration>
+              <rules>
+                <!-- JDK 1.8 is required to build Mojarra 2.3.x. -->
+                <requireJavaVersion>
+                  <message>To build this project, JDK 1.8 is required. Please install it.</message>
+                  <version>[1.8,)</version>
+                </requireJavaVersion>
+              </rules>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.5</version>
+      </plugin>
+      <!-- Include LICENSE.txt in the META-INF directory -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>copy-resources</id>
+            <phase>process-resources</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <resources>
+                <resource>
+                  <directory>${basedir}</directory>
+                  <includes>
+                    <include>LICENSE</include>
+                    <include>README</include>
+                  </includes>
+                </resource>
+              </resources>
+              <outputDirectory>${project.build.outputDirectory}/META-INF</outputDirectory>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- Generate the OSGi jar Manifest. -->
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>bundle-manifest</id>
+            <phase>process-classes</phase>
+            <goals>
+              <goal>manifest</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <archive>
+            <manifest>
+              <addDefaultSpecificationEntries>false</addDefaultSpecificationEntries>
+            </manifest>
+          </archive>
+          <instructions>
+            <Specification-Title>JSR-000372: JavaServer(TM) Faces 2.3 API</Specification-Title>
+            <Specification-Vendor>Oracle</Specification-Vendor>
+            <Specification-Version>2.3</Specification-Version>
+            <!-- Set the package version to match the spec version -->
+            <Export-Package>javax.faces*;version=2.3</Export-Package>
+          </instructions>
+        </configuration>
+      </plugin>
+
+      <!-- Add the OSGi Manifest to the main jar -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
+          </archive>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifestEntries>
+              <Specification-Title>JSR-000372: JavaServer(TM) Faces 2.3 API</Specification-Title>
+              <Specification-Vendor>Oracle</Specification-Vendor>
+              <Specification-Version>2.3</Specification-Version>
+            </manifestEntries>
+          </archive>
+        </configuration>
+      </plugin>
+      <!-- Disable signing as we don't do this on jboss artifacts -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-gpg-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>none</phase>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>source-release-assembly</id>
+            <configuration>
+              <skipAssembly>true</skipAssembly>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.commonjava.maven.plugins</groupId>
+        <artifactId>project-sources-maven-plugin</artifactId>
+        <version>0.3</version>
+        <executions>
+          <execution>
+            <id>project-sources-archive</id>
+            <phase>initialize</phase>
+            <goals>
+              <goal>archive</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>com.redhat.rcm.maven.plugin</groupId>
+        <artifactId>buildmetadata-maven-plugin</artifactId>
+        <version>1.7.0</version>
+        <executions>
+          <execution>
+            <id>build-metadata</id>
+            <phase>validate</phase>
+            <goals>
+              <goal>provide-buildmetadata</goal>
+            </goals>
+            <configuration>
+              <addToLocations>
+                <addToLocation>${session.executionRootDirectory}</addToLocation>
+              </addToLocations>
+              <activateOutputFileMapping>true</activateOutputFileMapping>
+              <addBuildDateInfo>false</addBuildDateInfo>
+              <addLocallyModifiedTagToFullVersion>false</addLocallyModifiedTagToFullVersion>
+              <addHostInfo>false</addHostInfo>
+              <addJavaRuntimeInfo>true</addJavaRuntimeInfo>
+              <addToFilters>false</addToFilters>
+              <validateCheckout>false</validateCheckout>
+              <addOsInfo>false</addOsInfo>
+              <hideJavaOptsInfo>false</hideJavaOptsInfo>
+              <forceNewProperties>true</forceNewProperties>
+              <hideCommandLineInfo>false</hideCommandLineInfo>
+              <addBuildDateToFullVersion>false</addBuildDateToFullVersion>
+              <createPropertiesReport>true</createPropertiesReport>
+              <addToGeneratedSources>false</addToGeneratedSources>
+              <createXmlReport>false</createXmlReport>
+              <propertiesOutputFile>build.metadata</propertiesOutputFile>
+              <addMavenExecutionInfo>false</addMavenExecutionInfo>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.sun.faces</groupId>
+      <artifactId>jsf-impl</artifactId>
+      <version>2.3.5.SP1</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.spec</groupId>
+      <artifactId>jboss-javaee-all-7.0</artifactId>
+      <version>1.1.0.Final</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.spec.javax.el</groupId>
+      <artifactId>jboss-el-api_3.0_spec</artifactId>
+      <version>1.0.10.Final</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.spec.javax.servlet.jsp</groupId>
+      <artifactId>jboss-jsp-api_2.3_spec</artifactId>
+      <version>1.0.2.Final</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.taglibs</groupId>
+      <artifactId>taglibs-standard-spec</artifactId>
+      <version>1.2.6-RC1</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.validation</groupId>
+      <artifactId>validation-api</artifactId>
+      <version>1.1.0.Final</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+</project>
+<!--
+Modified by POM Manipulation Extension for Maven 2.3.1 ( SHA: f64d03ba ) 
+-->
+

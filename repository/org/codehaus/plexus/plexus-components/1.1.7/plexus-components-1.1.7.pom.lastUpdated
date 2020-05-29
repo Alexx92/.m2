@@ -1,0 +1,9 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 03 10:35:22 GMT-04:00 2019
+@default-redhat-ea-repository-https\://maven.repository.redhat.com/earlyaccess/all/.lastUpdated=1567521321762
+https\://repo.maven.apache.org/maven2/.lastUpdated=1567521322267
+@default-jboss-ga-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1567521316526
+https\://maven.repository.redhat.com/earlyaccess/all/.error=Could not transfer artifact org.codehaus.plexus\:plexus-components\:pom\:1.1.7 from/to redhat-ea-repository (https\://maven.repository.redhat.com/earlyaccess/all)\: Failed to transfer file https\://maven.repository.redhat.com/earlyaccess/all/org/codehaus/plexus/plexus-components/1.1.7/plexus-components-1.1.7.pom with status code 500
+https\://maven.repository.redhat.com/ga/.error=Could not transfer artifact org.codehaus.plexus\:plexus-components\:pom\:1.1.7 from/to redhat-ga-repository (https\://maven.repository.redhat.com/ga)\: Failed to transfer file https\://maven.repository.redhat.com/ga/org/codehaus/plexus/plexus-components/1.1.7/plexus-components-1.1.7.pom with status code 500
+@default-redhat-ga-repository-https\://maven.repository.redhat.com/ga/.lastUpdated=1567521319092
+http\://maven.repository.redhat.com/techpreview/all/.error=Could not transfer artifact org.codehaus.plexus\:plexus-components\:pom\:1.1.7 from/to jboss-ga-repository (http\://maven.repository.redhat.com/techpreview/all)\: Failed to transfer file http\://maven.repository.redhat.com/techpreview/all/org/codehaus/plexus/plexus-components/1.1.7/plexus-components-1.1.7.pom with status code 500

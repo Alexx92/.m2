@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Wed Apr 10 11:13:56 GMT-04:00 2019
+shrinkwrap-spi-1.2.6.pom>central=
+shrinkwrap-spi-1.2.6.pom>jboss-public-repository=
+shrinkwrap-spi-1.2.6.jar>central=
+shrinkwrap-spi-1.2.6.jar>jboss-public-repository=

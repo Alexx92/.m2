@@ -1,0 +1,15 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue May 26 16:54:04 CLT 2020
+http\://repository.jboss.org/nexus/content/repositories/fs-public/.error=
+http\://repository.jboss.org/nexus/content/groups/public-jboss/.error=
+http\://repository.jboss.org/nexus/content/groups/public-jboss/.lastUpdated=1590526442821
+http\://repository.jboss.org/nexus/content/repositories/fs-releases/.error=
+@default-Maven\ Central-http\://repo1.maven.org/maven2/.lastUpdated=1590526443930
+http\://repository.jboss.org/nexus/content/groups/ea/.lastUpdated=1590526443331
+http\://repository.jboss.org/nexus/content/repositories/fs-releases/.lastUpdated=1590526443661
+http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1590526442106
+http\://repository.jboss.org/nexus/content/groups/ea/.error=
+https\://repo.maven.apache.org/maven2/.lastUpdated=1590526444219
+http\://maven.repository.redhat.com/techpreview/all/.error=
+http\://repository.jboss.org/nexus/content/repositories/fs-public/.lastUpdated=1590526442501
+http\://repo1.maven.org/maven2/.error=Could not transfer artifact org.apache.directory.shared\:shared-dsml-parser\:pom\:1.0.0-M11 from/to Maven Central (http\://repo1.maven.org/maven2/)\: Failed to transfer http\://repo1.maven.org/maven2/org/apache/directory/shared/shared-dsml-parser/1.0.0-M11/shared-dsml-parser-1.0.0-M11.pom. Error code 501, HTTPS Required

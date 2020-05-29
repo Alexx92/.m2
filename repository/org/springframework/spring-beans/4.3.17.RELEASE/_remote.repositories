@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Jun 21 10:54:02 GMT-04:00 2019
+spring-beans-4.3.17.RELEASE.jar>jboss-public-repository=
+spring-beans-4.3.17.RELEASE.jar>central=
+spring-beans-4.3.17.RELEASE.pom>central=
+spring-beans-4.3.17.RELEASE.pom>jboss-public-repository=

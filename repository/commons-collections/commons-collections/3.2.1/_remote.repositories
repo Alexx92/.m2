@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jun 24 11:13:45 GMT-04:00 2019
+commons-collections-3.2.1.jar>central=
+commons-collections-3.2.1.pom>central=
+commons-collections-3.2.1.pom>redhat-ea-repository=
+commons-collections-3.2.1.jar>jboss-enterprise-maven-repository-ea=
+commons-collections-3.2.1.jar>redhat-ea-repository=
+commons-collections-3.2.1.pom>jboss-enterprise-maven-repository-ea=

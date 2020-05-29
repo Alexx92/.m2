@@ -1,0 +1,9 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Sep 05 01:34:56 GMT-04:00 2019
+spring-boot-test-camel-1.0-SNAPSHOT-openshift.json>=
+spring-boot-test-camel-1.0-SNAPSHOT.jar>=
+spring-boot-test-camel-1.0-SNAPSHOT-kubernetes.json>=
+spring-boot-test-camel-1.0-SNAPSHOT-is.yml>=
+spring-boot-test-camel-1.0-SNAPSHOT-openshift.yml>=
+spring-boot-test-camel-1.0-SNAPSHOT.pom>=
+spring-boot-test-camel-1.0-SNAPSHOT-kubernetes.yml>=

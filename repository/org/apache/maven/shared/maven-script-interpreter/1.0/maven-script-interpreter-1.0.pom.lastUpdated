@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jun 24 11:12:03 GMT-04:00 2019
+https\://repo.maven.apache.org/maven2/.lastUpdated=1561389123716
+@default-jboss-ga-repository-http\://maven.repository.redhat.com/techpreview/all/.lastUpdated=1561389123387
+http\://maven.repository.redhat.com/techpreview/all/.error=Could not transfer artifact org.apache.maven.shared\:maven-script-interpreter\:pom\:1.0 from/to jboss-ga-repository (http\://maven.repository.redhat.com/techpreview/all)\: Connect to maven.repository.redhat.com\:443 [maven.repository.redhat.com/104.118.45.176] failed\: Connection timed out\: connect

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+     Copyright 2005-2016 Red Hat, Inc.
+
+     Red Hat licenses this file to you under the Apache License, version
+     2.0 (the "License"); you may not use this file except in compliance
+     with the License.  You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+     implied.  See the License for the specific language governing
+     permissions and limitations under the License.
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>io.fabric8.patch</groupId>
+        <artifactId>patch-project</artifactId>
+        <version>1.2.0.redhat-630187</version>
+    </parent>
+
+    <artifactId>patch-management</artifactId>
+    <packaging>bundle</packaging>
+
+    <name>Fabric8 :: Patch :: Management</name>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>${maven-bundle-plugin-version}</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Bundle-UpdateLocation>mvn:${project.groupId}/${project.artifactId}/${project.version}</Bundle-UpdateLocation>
+                        <Provide-Capability>osgi.service;effective:=active;objectClass="io.fabric8.patch.management.PatchManagement",
+                            osgi.service;effective:=active;objectClass="io.fabric8.patch.management.BackupService"</Provide-Capability>
+                    </instructions>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>integration-test</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <classpathDependencyExcludes>
+                        <classpathDependencyExclude>org.eclipse.jgit:org.eclipse.jgit</classpathDependencyExclude>
+                    </classpathDependencyExcludes>
+                    <additionalClasspathElements>
+                        <additionalClasspathElement>${project.build.directory}/${project.build.finalName}.jar</additionalClasspathElement>
+                    </additionalClasspathElements>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <properties>
+        <fuse.osgi.activator>io.fabric8.patch.management.impl.Activator</fuse.osgi.activator>
+        <fuse.osgi.import>javax.net.ssl,
+            org.osgi.framework,
+            org.osgi.framework.startlevel,
+            org.osgi.service.log;resolution:=optional,
+            org.osgi.util.tracker</fuse.osgi.import>
+        <fuse.osgi.export>io.fabric8.patch.management</fuse.osgi.export>
+        <fuse.osgi.private.pkg>!org.osgi*,
+            org.slf4j,
+            *</fuse.osgi.private.pkg>
+    </properties>
+
+    <dependencies>
+
+        <!-- External dependencies -->
+
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.enterprise</artifactId>
+        </dependency>
+
+        <!-- Test dependencies -->
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Private-Packaged dependencies -->
+
+        <dependency>
+            <groupId>org.eclipse.jgit</groupId>
+            <artifactId>org.eclipse.jgit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-nop</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+        </dependency>
+        <dependency>
+            <!-- Handles UNIX file permissions better than java.util.zip -->
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-compress</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.felix</groupId>
+            <artifactId>org.apache.felix.utils</artifactId>
+            <version>${felix-utils-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.karaf</groupId>
+            <artifactId>org.apache.karaf.util</artifactId>
+            <version>${karaf-version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

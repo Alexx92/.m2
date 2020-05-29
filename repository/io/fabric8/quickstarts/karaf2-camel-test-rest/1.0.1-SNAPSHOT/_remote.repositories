@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Sep 05 11:30:54 GMT-04:00 2019
+karaf2-camel-test-rest-1.0.1-SNAPSHOT-kubernetes.json>=
+karaf2-camel-test-rest-1.0.1-SNAPSHOT-openshift.yml>=
+karaf2-camel-test-rest-1.0.1-SNAPSHOT.pom>=
+karaf2-camel-test-rest-1.0.1-SNAPSHOT-kubernetes.yml>=
+karaf2-camel-test-rest-1.0.1-SNAPSHOT-openshift.json>=
+karaf2-camel-test-rest-1.0.1-SNAPSHOT.jar>=

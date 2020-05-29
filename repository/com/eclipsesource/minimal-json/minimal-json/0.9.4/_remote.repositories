@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon May 04 16:45:46 CLT 2020
+minimal-json-0.9.4.jar>central=
+minimal-json-0.9.4.jar>jboss-public-repository-group=
+minimal-json-0.9.4.pom>central=
+minimal-json-0.9.4.pom>jboss-public-repository-group=
